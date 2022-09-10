@@ -1,12 +1,12 @@
 const { ethers } = require("hardhat");
 require("dotenv").config({ path: ".env" });
 
-const { WHITELIST_CONTRACT_ADDRESS, METADATA_URL } = require("../constants")
+const { WHITELIST_CONTRACT_ADDRESS, METADATA_URL } = require("../constants");
 
 async function main() {
-  const whitelistContract = 0xa6362b21cC72950E7374D0A6997c412a824a0F04;
+  const whitelistContract = WHITELIST_CONTRACT_ADDRESS;
 
-  const metadataUrl = ;
+  const metadataUrl = METADATA_URL;
 
   const nftContract = await ethers.getContractFactory("NFT");
 
